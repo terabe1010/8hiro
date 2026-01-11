@@ -176,17 +176,23 @@ $(window).on('scroll load', function() {
 });
 
 
-$(function() {
-  // 被害・対策、事業者情報にホバーした時
-  $('.item-wrap').on('mouseenter', function() {
-    $(this).find('.submenu').stop(true, true).slideDown(300);
-    $(this).find('.item').addClass('active');
+// $(function(){
+//   $(".has-sub").mouseover(function(){
+//     $(this).children(".sub").stop().slideDown();
+//   });
+//   $(".has-sub").mouseout(function(){
+//     $(".sub").stop().slideUp();
+//   });
+// });
+
+$(function(){
+  $(".has-sub").on("mouseenter", function(){
+    $(this).addClass("active");
+    $(this).children(".sub").stop().slideDown(200);
   });
 
-  $('.item-wrap').on('mouseleave', function() {
-    $(this).find('.submenu').stop(true, true).slideUp(300);
-    $(this).find('.item').removeClass('active');
+  $(".has-sub").on("mouseleave", function(){
+    $(this).removeClass("active");
+    $(this).children(".sub").stop().slideUp(200);
   });
 });
-
-
