@@ -40,9 +40,7 @@ img {
 li {
   list-style: none;
 }
-.en {
-  font-family: Arial, Helvetica, sans-serif;
-}
+
 .wrapper  {
   max-width: 1200px;
   padding: 0 16px;
@@ -50,9 +48,14 @@ li {
 }
 .sec-title {
     padding-left: 7px;
-    margin-bottom: 10px;
-    font-size: 1rem;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
     border-left: 5px solid var(--accent);
+}
+.text {
+  font-size: 1rem;
+  line-height: 26px;
+  margin-bottom: 20px;
 }
 .contact-link {
   text-align: center;
@@ -420,21 +423,54 @@ nav-menu
 #nav-menu .flex .item .item-title {
   background-color: var(--yellow);
   text-align: center;
-  font-size: 0.85rem;
+  font-size: 1rem;
   padding: 12px;
+  border-radius: 5px 5px 0 0;
 }
 #nav-menu .flex .item .text-link {
-  padding: 10px;
+  padding: 20px;
+}
+#nav-menu .flex .item .text-link .link {
+  line-height: 30px;
 }
 
+/* --------------------------------
+self-introduction
+-------------------------------- */
 #self-introduction {
   margin-bottom: 20px;
   background-color: var(--base);
   border-radius: 8px;
   padding: 20px;
 }
+#self-introduction .flex {
+  display: flex;
+  gap: 0 1%;
+}
+#self-introduction .flex .text-area {
+  width: 70%;
+}
+#self-introduction .flex .img-area {
+  width: 30%;
+}
+#self-introduction .flex .img-area .img {
+  text-align: center;
+  margin-bottom: 30px;
+}
+#self-introduction .flex .img-area .comment {
+  display: block;
+  text-align: center;
+}
 
-
+/* --------------------------------
+news
+-------------------------------- */
+#news {
+  margin-bottom: 20px;
+  background-color: var(--base);
+  border-radius: 8px;
+  padding: 20px;
+}
 
 /* --------------------------------
 footer
@@ -880,5 +916,33 @@ SP
     font-size: 0.9rem;
     line-height: 1.7;
   }
+  /* --------------------------------
+  [SP]nav-menu
+  -------------------------------- */
+  #nav-menu .flex {
+  display: flex;
+    flex-wrap: wrap;
+    gap: 20px 1.5%;
+  }
+  #nav-menu .flex .item {
+    width: 48%;
+    
+  }
+
+
+
+  /* --------------------------------
+  [SP]footer
+  -------------------------------- */
+
+  #footer .flex {
+    flex-direction: column;
+    gap: 30px 0;
+  } 
+
+  #footer .flex .flex-item {
+    width: 100%;
+  }
+
 }
   

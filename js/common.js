@@ -1,8 +1,9 @@
 $(".slider").slick({
   lazyLoad: 'ondemand',
-  autoplay: false, // 自動再生
+  autoplay: true, // 自動再生
   autoplaySpeed: 3000, // 再生速度（ミリ秒設定） 1000ミリ秒=1秒
   infinite: true, // 無限スライド
+  speed: 1000,
   arrows: true, // 矢印
   dots: false, // インジケーター
   centerMode: false,// 前後スライドを部分表示
@@ -15,7 +16,7 @@ $(".slider").slick({
       centerPadding: '0',
       speed: 600,
       arrows: false,
-      dots: true,
+      dots: false,
     },
   },
   ]
