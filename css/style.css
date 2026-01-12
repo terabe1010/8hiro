@@ -150,11 +150,11 @@ header
   position: absolute;
   left: 0;
   top: 3.1em;
-  width: 180px;
+  width: 220px;
   z-index: 3;
 }
 #nav .sub > .sub-item > a {
-  color: #fff;
+  color: var(--yellow);
   line-height: 1.75;
   background-color: var(--brown);
   padding: 8px 18px;
@@ -323,11 +323,11 @@ header
   position: absolute;
   left: 0;
   top: 3.1em;
-  width: 180px;
+  width: 220px;
   z-index: 3;
 }
 #fixed-nav .sub > .sub-item > a {
-  color: #fff;
+  color: var(--yellow);
   line-height: 1.75;
   background-color: var(--brown);
   padding: 8px 18px;
@@ -606,7 +606,7 @@ TB
     display: block;
     width: 100%;
     background-color: #532300;
-    padding: 140px 30px 0 30px;
+    padding: 90px 30px 0 30px;
     position: fixed;
     top: 0;
     right: -1000px;
@@ -615,6 +615,7 @@ TB
     overflow-y: auto;
     z-index: 20;
     transition: 0.8s;
+    font-size: 1.2rem;
   }
   #menu-sp .menu .item {
     margin-bottom: 20px;
@@ -622,6 +623,25 @@ TB
   }
   #menu-sp .menu .item a {
     color: var(--yellow);
+  }
+  #menu-sp .menu .item .sp-sub {
+    margin-top: 5px;
+  }
+  #menu-sp .menu .item .sp-sub .sp-sub-item {
+    position: relative;
+    margin-bottom: 3px;
+  }
+  #menu-sp .menu .item .sp-sub .sp-sub-item a {
+    margin-left: 20px;
+  }
+  #menu-sp .menu .item .sp-sub .sp-sub-item a::before {
+    content: "";
+    width: 6px;
+    height: 1px;
+    background-color: var(--yellow);
+    position: absolute;
+    top: 11px;
+    left: 2px;
   }
   #menu-sp .menu .item.u-cottage {
     margin-bottom: 5px;
