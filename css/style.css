@@ -57,6 +57,9 @@ li {
   line-height: 26px;
   margin-bottom: 20px;
 }
+.flex {
+  display: flex;
+}
 .contact-link {
   text-align: center;
   margin-bottom: 100px;
@@ -410,7 +413,7 @@ mainvisual
 nav-menu
 -------------------------------- */
 #nav-menu {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 #nav-menu .flex {
   display: flex;
@@ -442,7 +445,7 @@ nav-menu
 self-introduction
 -------------------------------- */
 #self-introduction {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   background-color: var(--base);
   border-radius: 8px;
   padding: 20px;
@@ -470,10 +473,28 @@ self-introduction
 news
 -------------------------------- */
 #news {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   background-color: var(--base);
   border-radius: 8px;
   padding: 20px;
+}
+#news .flex {
+  margin-bottom: 50px;
+}
+#news .flex .news-list {
+  width: 60%;
+} 
+#news .flex .video {
+  width: 40%;
+}
+#news .flex .video iframe {
+  width: 100%;
+  height: 350px;
+}
+
+#news .youtube {
+  font-weight: normal;
+  margin-bottom: 30px;
 }
 
 /* --------------------------------
