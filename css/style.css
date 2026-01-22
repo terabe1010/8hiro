@@ -46,6 +46,11 @@ li {
   padding: 0 16px;
   margin: 0 auto;
 }
+.wrapper-02  {
+  max-width: 1600px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
 .sec-title {
     padding-left: 10px;
     margin-bottom: 20px;
@@ -90,7 +95,7 @@ header
   height: 80px;
   
 }
-#header .wrapper {
+#header .wrapper-02 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -231,7 +236,7 @@ line-height: 1px;
   top: 0;
   visibility: visible;
 }
-#js-fixed-header .wrapper {
+#js-fixed-header .wrapper-02 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -563,8 +568,8 @@ TB
   #header {
     height: 60px;
   }
-  #header .wrapper {
-    padding: 0 40px;
+  #header .wrapper-02 {
+    padding: 0 16px;
     height: 60px;
   }
   #header .site-title {
@@ -710,8 +715,9 @@ TB
   #js-fixed-header {
     height: 60px;
   }
-  #js-fixed-header .wrapper {
-    padding: 0 40px;
+  #js-fixed-header .wrapper-02 {
+    padding: 0 16px;
+    height: 60px;
   }
   #js-fixed-header .site-title {
   font-size: 2rem;
@@ -946,8 +952,14 @@ SP
   #header .wrapper {
     padding: 0 20px;
   }
+  #header .site-title img {
+    height: 40px;
+  }
   #header .hamburger {
     right: 20px;
+  }
+  #js-fixed-header .site-title img {
+    height: 40px;
   }
   #js-fixed-header .hamburger {
     right: 20px;
@@ -963,10 +975,7 @@ SP
   /* --------------------------------
   [SP]mainvisual
   -------------------------------- */
-  #mainvisual {
-    background-position: center top;
-    background-image: url(../img/top/top-sp-img1.jpg);
-  } 
+
   #mainvisual .br-sp {
     display: block;
   }
@@ -994,6 +1003,9 @@ SP
   #nav-menu .flex .item {
     width: 48%;
     
+  }
+  #nav-menu .flex .item .text-link .link {
+    line-height: 23px;
   }
 
   /* --------------------------------
