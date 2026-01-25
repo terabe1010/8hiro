@@ -53,14 +53,15 @@ li {
 }
 .top-img {
   width: 100%;
-  height: 300px;
+  height: 400px;
   overflow: hidden;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .top-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 .sec-title {
   padding-left: 10px;
@@ -91,6 +92,9 @@ li {
 .flex .img-area {
   width: 35%;
   text-align: center;
+}
+.flex .img-area .img {
+  margin-bottom: 30px;
 }
 .flex .img-area .comment {
   display: block;
@@ -136,21 +140,7 @@ li {
   border-right: 1px solid var(--text);
   right: 13px;
 }
-.contact-link {
-  text-align: center;
-  margin-bottom: 100px;
-}
-.contact-link .tel-text {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  margin-bottom: 15px;
-  color: #CB5338;
-}
-.contact-link .tel {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-top: 20px;
-}
+
 
 /* --------------------------------
 header
@@ -996,14 +986,14 @@ SP
   }
   .text {
     font-size: 1rem;
-    line-height: 16px;
-    margin-bottom: 10px;
-}
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
 	.loading__logo {
-  opacity: 0;
-  animation: logo_fade 2s 0.5s forwards;
-  width: 100px;
-}
+    opacity: 0;
+    animation: logo_fade 2s 0.5s forwards;
+    width: 100px;
+  }
 
   /* --------------------------------
   [SP]header
