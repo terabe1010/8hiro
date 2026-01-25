@@ -51,11 +51,30 @@ li {
   padding: 0 16px;
   margin: 0 auto;
 }
+.top-img {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.top-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .sec-title {
-    padding-left: 10px;
-    margin-bottom: 20px;
-    font-size: 1.3rem;
-    border-left: 5px solid var(--accent);
+  padding-left: 10px;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  border-left: 5px solid var(--accent);
+}
+.title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+  padding-top: 20px;
+  border-bottom: solid var(--accent) 1px;
+  display: inline-block;
 }
 .text {
   font-size: 1rem;
@@ -64,6 +83,58 @@ li {
 }
 .flex {
   display: flex;
+  gap: 0 2%;
+}
+.flex .text-area {
+  width: 65%;
+}
+.flex .img-area {
+  width: 35%;
+  text-align: center;
+}
+.flex .img-area .comment {
+  display: block;
+}
+.sec-area {
+  margin-bottom: 30px;
+  background-color: var(--base);
+  border-radius: 8px;
+  padding: 20px;
+}
+.cta {
+  margin-bottom: 30px;
+}
+.cta .link {
+  display: inline-block;
+  padding: 10px 50px 10px 30px;
+  border: 1px solid var(--accent);
+  position: relative;
+  background-color: var(--accent);
+  font-weight: 500;
+  color: var(--base);
+  font-size: 1.1rem;
+}
+.cta .link:hover {
+  background-color: var(--base);
+  color: var(--text);
+  border: 1px solid var(--text);
+}
+.cta .link:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-top: 1px solid var(--base);
+  border-right: 1px solid var(--base);
+  position: absolute;
+  top: 17px;
+  right: 26px;
+  transform: rotate(45deg);
+  transition: ease 0.3s;
+}
+.cta .link:hover:after {
+  border-top: 1px solid var(--text);
+  border-right: 1px solid var(--text);
+  right: 13px;
 }
 .contact-link {
   text-align: center;
@@ -444,21 +515,6 @@ nav-menu
 /* --------------------------------
 self-introduction
 -------------------------------- */
-#self-introduction {
-  margin-bottom: 30px;
-  background-color: var(--base);
-  border-radius: 8px;
-  padding: 20px;
-}
-#self-introduction .flex {
-  gap: 0 1%;
-}
-#self-introduction .flex .text-area {
-  width: 70%;
-}
-#self-introduction .flex .img-area {
-  width: 30%;
-}
 #self-introduction .flex .img-area .img {
   text-align: center;
   margin-bottom: 30px;
@@ -471,12 +527,6 @@ self-introduction
 /* --------------------------------
 news
 -------------------------------- */
-#news {
-  margin-bottom: 30px;
-  background-color: var(--base);
-  border-radius: 8px;
-  padding: 20px;
-}
 #news .flex {
   margin-bottom: 50px;
 }
@@ -494,6 +544,35 @@ news
 #news .youtube {
   font-weight: normal;
   margin-bottom: 30px;
+}
+
+/* --------------------------------
+catching
+-------------------------------- */
+
+
+/* --------------------------------
+area
+-------------------------------- */
+#area .zone {
+  font-weight: 500;
+  padding: 20px 0;
+  padding-left: 10px;
+}
+
+
+/* --------------------------------
+price
+-------------------------------- */
+#price .price-area {
+  margin-bottom: 30px;
+}
+#price .title {
+  padding-top: 0;
+}
+#price .price-area .title {
+  margin-bottom: 5px;
+  padding-top: 5px;
 }
 
 /* --------------------------------
@@ -899,44 +978,27 @@ SP
   .wrapper-04 {
     padding: 0 20px;
   } 
-  .page-title {
-    margin-bottom: 60px;
-    font-size: 1.5rem;
+  .flex {
+    flex-direction: column;
   }
-  .page-sec-title {
-    font-size: 1.3rem;
-    border-left: 8px solid #137180;
-    padding-left: 15px;
-    line-height: 30px;
-    margin-bottom: 30px;
+  .flex .text-area {
+    width: 100%;
   }
-  .contact-link .btn {
-    font-size: 1rem;
-    margin-bottom: 10px;
-    padding: 10px 40px 10px 10px;
+  .flex .img-area {
+    width: 100%;
   }
-  .contact-link .btn::after {
-    width: 10px;
-    height: 10px;
-    top: 17px;
-    right: 23px;
-  }
-  .contact-link .btn:hover::after {
-    right: 30px;
-  }
-  .contact-link .tel-text {
-    font-size: 1rem;
-    line-height: 1.8;
-    margin-bottom: 15px;
-    color: #CB5338;
-  }
-  .contact-link .tel {
-    font-size: 1rem;
-  }
-    .br-pc {
+  .br-pc {
     display: none;
   }
-	
+	.top-img {
+    height: 150px;
+    margin-bottom: 30px;
+  }
+  .text {
+    font-size: 1rem;
+    line-height: 16px;
+    margin-bottom: 10px;
+}
 	.loading__logo {
   opacity: 0;
   animation: logo_fade 2s 0.5s forwards;
@@ -999,6 +1061,7 @@ SP
     display: flex;
     flex-wrap: wrap;
     gap: 20px 1.5%;
+    flex-direction: row;
   }
   #nav-menu .flex .item {
     width: 48%;
