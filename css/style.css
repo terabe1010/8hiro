@@ -1057,6 +1057,9 @@ SP
     width: 48%;
     
   }
+  #nav-menu .flex .item .text-link {
+    padding: 7px;
+  }
   #nav-menu .flex .item .text-link .link {
     line-height: 23px;
   }
