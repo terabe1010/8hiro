@@ -565,6 +565,32 @@ price
   padding-top: 5px;
 }
 
+
+/* --------------------------------
+kinds
+-------------------------------- */
+#kinds .list {
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+#kinds .list .item {
+  margin-bottom: 15px;
+}
+#kinds .tree {
+  text-align: center;
+  margin-bottom: 60px;
+  padding-top: 30px;
+}
+#kinds .tree .tree-text {
+  margin: 10px 0;
+}
+#kinds .tree .genus {
+  display: flex;
+  justify-content: center;
+  gap: 0 4%;
+}
+
+
 /* --------------------------------
 footer
 -------------------------------- */
