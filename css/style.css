@@ -589,7 +589,9 @@ kinds
   justify-content: center;
   gap: 0 4%;
 }
-
+#kinds .img-area .img {
+  margin-bottom: 60px;
+}
 
 /* --------------------------------
 footer
