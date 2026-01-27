@@ -594,6 +594,18 @@ kinds
 }
 
 /* --------------------------------
+classification
+-------------------------------- */
+#classification .text-area .img {
+  margin-bottom: 40px;
+}
+
+#classification .text-area .img .comment {
+  display: block;
+}
+
+
+/* --------------------------------
 footer
 -------------------------------- */
 #footer {
