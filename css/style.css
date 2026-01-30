@@ -99,6 +99,12 @@ li {
 .flex .img-area .comment {
   display: block;
 }
+.flex .text-area .img {
+  margin-bottom: 40px;
+}
+.flex .text-area .img .comment {
+  display: block;
+}
 .sec-area {
   margin-bottom: 30px;
   background-color: var(--base);
@@ -596,13 +602,7 @@ kinds
 /* --------------------------------
 classification
 -------------------------------- */
-#classification .text-area .img {
-  margin-bottom: 40px;
-}
 
-#classification .text-area .img .comment {
-  display: block;
-}
 
 
 /* --------------------------------
@@ -611,6 +611,12 @@ history
 #history .mb {
   margin-bottom: 80px;
 }
+
+/* --------------------------------
+history
+-------------------------------- */
+
+
 
 /* --------------------------------
 footer
