@@ -613,8 +613,23 @@ history
 }
 
 /* --------------------------------
-history
+faq
 -------------------------------- */
+#faq .flex .title {
+  display: block;
+  border-bottom: none;
+  
+}
+#faq .flex .title a {
+  text-decoration: underline;
+}
+
+/* --------------------------------
+answer
+-------------------------------- */
+#answer .text {
+  
+}
 
 
 
