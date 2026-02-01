@@ -195,7 +195,7 @@ line-height: 1px;
   text-decoration: none;
   position: relative;
   display: inline-block;
-  line-height: 20px;
+  line-height: 60px;
   letter-spacing: .1em;
   cursor: pointer;
 }
@@ -494,6 +494,9 @@ nav-menu
   width: 24%;
   
 }
+#nav-menu .flex .item .img img {
+  width: 100%;
+}
 #nav-menu .flex .item .item-title {
   background-color: var(--yellow);
   text-align: center;
@@ -647,6 +650,14 @@ footer
 #footer .flex .flex-item {
   width: 32%;
   color: var(--yellow);
+}
+#footer .flex .flex-item .title {
+  border: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 #footer .flex .flex-item a {
   color: var(--yellow);
