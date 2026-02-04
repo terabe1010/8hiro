@@ -636,6 +636,14 @@ bbs-contents
   margin: 30px 0 40px 0 ;
 }
 
+/* --------------------------------
+moving
+-------------------------------- */
+#moving .fa-down-long {
+  color: red;
+  font-weight: 900; 
+  margin-left: 60px;
+}
 
 /* --------------------------------
 footer
