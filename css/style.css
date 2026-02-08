@@ -65,7 +65,7 @@ li {
 }
 .sec-title {
   padding-left: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   font-size: 1.3rem;
   border-left: 5px solid var(--accent);
 }
@@ -725,8 +725,22 @@ TB
   html {
     font-size: 1.2vw;
   }
-
-
+  .text {
+    font-size: 1.5rem;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+  .sec-title {
+    padding-left: 10px;
+    margin-bottom: 35px;
+    font-size: 1.7rem;
+  }
+  .title {
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-bottom: 40px;
+    padding-top: 20px;
+  }
   /* --------------------------------
   [TB]header
   -------------------------------- */
@@ -812,7 +826,8 @@ TB
   }
   #menu-sp .menu .item {
     margin-bottom: 20px;
-    font-size: 1rem;
+    /* font-size: 1rem; */
+    font-size: 1.5rem;
     color: var(--yellow);
   }
   #menu-sp .menu .item a {
@@ -1081,9 +1096,9 @@ SP
     margin-bottom: 30px;
   }
   .text {
-    font-size: 1rem;
-    line-height: 20px;
-    margin-bottom: 15px;
+    font-size: 1.5rem;
+    line-height: 28px;
+    margin-bottom: 20px;
   }
 	.loading__logo {
     opacity: 0;
@@ -1157,7 +1172,9 @@ SP
     padding: 7px;
   }
   #nav-menu .flex .item .text-link .link {
-    line-height: 23px;
+    font-size: 1.1rem;
+    line-height: 21px;
+    margin-bottom: 20px;
   }
 
   /* --------------------------------
