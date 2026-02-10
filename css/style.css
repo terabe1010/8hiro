@@ -452,6 +452,16 @@ mainvisual-video
   height: 100vh;
   overflow: hidden;
 }
+#mainvisual-video::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0,0,0,0.4),
+    rgba(0,0,0,0.4)
+  );
+  z-index: 1;
+}
 #mainvisual-video .bg-video {
   position: fixed;
   top: 0;
@@ -460,6 +470,8 @@ mainvisual-video
   width: 100vw;
   height: 100vh;
   object-fit: cover;
+  transform: translateZ(0);
+  will-change: transform;
 }
 #mainvisual-video .concept-title {
   font-size: 3rem;
