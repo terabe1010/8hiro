@@ -226,7 +226,7 @@ line-height: 1px;
   display: none;
   position: absolute;
   left: 0;
-  top: 3.1em;
+  top: 3.8em;
   width: 220px;
   z-index: 3;
 }
@@ -261,11 +261,6 @@ line-height: 1px;
 }
 #nav .menu .item.no-border {
   border-right: 0
-}
-#nav .menu .item .sns .sns-logo,
-#menu-sp .menu .item .sns-logo {
-  height: 15px;
-  display: inline-block;
 }
 #menu-sp .menu .item .sns-logo {
   margin-bottom: 3px;
@@ -360,7 +355,7 @@ line-height: 1px;
   text-decoration: none;
   position: relative;
   display: inline-block;
-  line-height: 20px;
+  line-height: 60px;
   letter-spacing: .1em;
   cursor: pointer;
 }
@@ -384,7 +379,7 @@ line-height: 1px;
   display: none;
   position: absolute;
   left: 0;
-  top: 3.1em;
+  top: 3.8em;
   width: 220px;
   z-index: 3;
 }
@@ -826,8 +821,7 @@ TB
   }
   #menu-sp .menu .item {
     margin-bottom: 20px;
-    /* font-size: 1rem; */
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: var(--yellow);
   }
   #menu-sp .menu .item a {
@@ -973,7 +967,7 @@ TB
   }
   #fixed-menu-sp .menu .item {
     margin-bottom: 20px;
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--yellow);
   }
@@ -1138,11 +1132,11 @@ SP
   [SP]mainvisual-video
   -------------------------------- */
   #mainvisual-video {
-    height: 600px;
+    height: 400px;
   }
   #mainvisual-video .bg-video {
     width: 100vw;
-    height: 600px;
+    height: 400px;
     object-fit: cover;
   }
   #mainvisual-video .concept-title {
