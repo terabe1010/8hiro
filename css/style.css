@@ -74,8 +74,10 @@ li {
   font-weight: 500;
   margin-bottom: 30px;
   padding-top: 20px;
-  border-bottom: solid var(--accent) 1px;
+  /* border-bottom: solid var(--accent) 1px; */
   display: inline-block;
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
 }
 .text {
   font-size: 1rem;
@@ -96,8 +98,9 @@ li {
 .flex .img-area .img {
   margin-bottom: 30px;
 }
-.flex .img-area .comment {
+.comment {
   display: block;
+  margin-top: 3px;
 }
 .flex .text-area .img {
   margin-bottom: 40px;
@@ -155,6 +158,12 @@ li {
   border-top: 1px solid var(--text);
   border-right: 1px solid var(--text);
   right: 13px;
+}
+.my-ad-sidebar {
+    width: 100%;         /* 親要素（右カラム）の幅に合わせる */
+    max-width: 300px;    /* どんなに大きくても300pxまでに制限する */
+    margin: 0 auto;      /* 中央寄せ */
+    overflow: hidden;    /* 万が一のはみ出しをカット */
 }
 
 /* --------------------------------
@@ -671,6 +680,7 @@ footer
   padding: 0;
   font-size: 1.2rem;
   font-weight: 600;
+  text-decoration: none;
 }
 #footer .flex .flex-item a {
   color: var(--yellow);
@@ -1071,12 +1081,17 @@ SP
   } 
   .flex {
     flex-direction: column;
+    gap: 30px 0;
   }
   .flex .text-area {
     width: 100%;
   }
   .flex .img-area {
     width: 100%;
+  }
+  .comment {
+    font-size: 1.2rem;
+    text-align: center;
   }
   .br-sp {
     display: block;
@@ -1097,6 +1112,12 @@ SP
     opacity: 0;
     animation: logo_fade 2s 0.5s forwards;
     width: 100px;
+  }
+  .cta {
+    text-align: center;
+  }
+  .cta .link {
+    font-size: 1.5rem;
   }
 
   /* --------------------------------
@@ -1215,6 +1236,12 @@ SP
   #news .flex .video {
     width: 100%;
   }
+  /* --------------------------------
+  kinds
+  -------------------------------- */
+  #kinds .tree .tree-text {
+    font-size: 1.2rem;
+  }
 
   /* --------------------------------
   [SP]history
@@ -1226,10 +1253,12 @@ SP
   /* --------------------------------
   [SP]footer
   -------------------------------- */
-
+  #footer {
+    padding: 5px 0 50px 0;
+  }
   #footer .flex {
     flex-direction: column;
-    gap: 30px 0;
+    gap: 15px 0;
   } 
   #footer .flex .flex-item {
     width: 100%;

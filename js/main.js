@@ -196,3 +196,29 @@ $(function(){
     $(this).children(".sub").stop().slideUp(200);
   });
 });
+
+/*=================================================
+Googleアドセンス
+===================================================*/
+window.onload = function() {
+    const adContainers = document.querySelectorAll('.my-ad-sidebar');
+
+    adContainers.forEach(function(container) {
+        const ins = document.createElement('ins');
+        ins.className = 'adsbygoogle';
+        
+        // 固定サイズではなく「レスポンシブ（block）」に設定
+        ins.style.display = 'block';
+        
+        // ユーザー様のIDとスロット番号
+        ins.setAttribute('data-ad-client', 'ca-pub-3820632612536200');
+        ins.setAttribute('data-ad-slot', '2052696980');
+        
+        // ここが重要：画面幅に合わせる設定
+        ins.setAttribute('data-ad-format', 'auto');
+        ins.setAttribute('data-full-width-responsive', 'true');
+
+        container.appendChild(ins);
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    });
+};
